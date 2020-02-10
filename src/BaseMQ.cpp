@@ -62,7 +62,6 @@ float BaseMQ::readRs() const {
   float rs = 0;
   for (int i = 0; i < MQ_SAMPLE_TIMES; i++) {
     rs += calculateResistance(analogRead(_pin));
-    delay(MQ_SAMPLE_INTERVAL);
   }
   rs = rs / MQ_SAMPLE_TIMES;
   return rs;

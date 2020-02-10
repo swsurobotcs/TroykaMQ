@@ -12,15 +12,13 @@
 #define BaseMQ_H
 #include <Arduino.h>
 // кол-во считываний значений в цикле
-#define MQ_SAMPLE_TIMES     5
-// задержка после каждого считывания датчика
-#define MQ_SAMPLE_INTERVAL  20
+#define MQ_SAMPLE_TIMES     25
 // время нагрева датчика
 #define MQ_HEATING_TIME     6000
 // время охлаждение датчика
 #define MQ_COOLANCE_TIME    9000
 // разрядность АЦП
-#define ADC_BIT             10
+#define ADC_BIT             16
 // масимальное значение АЦП
 #define ADC_VALUE_MAX       pow(2, ADC_BIT)
 
